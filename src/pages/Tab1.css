@@ -1,0 +1,7 @@
+.custom-button {
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: normal;
+    --padding-start: 0;
+    color: black;
+}
