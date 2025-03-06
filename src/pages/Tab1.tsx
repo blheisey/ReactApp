@@ -6,6 +6,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Tab1.css';
+import ListofDays from '../components/ListofDays';
 
 const Tab1: React.FC = () => {
   return (
@@ -166,46 +167,7 @@ const Tab1: React.FC = () => {
         </IonCard>
 
         <IonCard>
-          <IonList inset={true}>
-            <IonItem>
-              <IonLabel>7 Day Forecast</IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Today ☀️</IonButton>
-              </IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Tuesday 🌧️</IonButton>
-              </IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Wednesday ☁️</IonButton>
-              </IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Thursday ☁️</IonButton>
-              </IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Friday ☁️</IonButton>
-              </IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Saturday 🌤️</IonButton>
-              </IonLabel>
-            </IonItem>
-            <IonItem>
-              <IonLabel>
-              <IonButton className="custom-button" fill="clear" routerLink="./Tab2">Sunday 🌤️</IonButton>
-              </IonLabel>
-            </IonItem>
-          </IonList>
+          <ListofDays />
         </IonCard>
         
 

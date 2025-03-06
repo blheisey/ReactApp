@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
-const WeekCalendar: React.FC = () => {
+const WeekCalendar: React.FC = (onDateChange) => {
     const today = new Date();
     const [selectedDate, setSelectedDate] = useState<Date | null>(today);
 
@@ -15,7 +15,15 @@ const WeekCalendar: React.FC = () => {
         return date;
     });
 
+    const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>, onDateChange: (date: Date) => void) => {
+        const newDate = new Date(event.target.value); // Get the new selected date
+        onDateChange(newDate);
+    };
+
+
     return (
+
+        
          <Swiper
                       spaceBetween={0}
                       slidesPerView={4}
