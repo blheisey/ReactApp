@@ -17,7 +17,6 @@ const Tab3: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Tab 3 page" />
-        some text
       </IonContent>
     </IonPage>
   );

@@ -5,10 +5,10 @@ const ListofDays: React.FC = () => {
     const today = new Date();
     const [selectedDate, setSelectedDate] = useState<Date | null>(today);
 
-    // Create an array of the 7 days in the current week
+
     const weekDates = Array.from({ length: 7 }, (_, i) => {
-        const date = new Date(today); // Start with today's date
-        date.setDate(today.getDate() + i); // Increment the day
+        const date = new Date(today); 
+        date.setDate(today.getDate() + i); 
         return date;
     });
 
@@ -20,10 +20,10 @@ const ListofDays: React.FC = () => {
                     key={index}
                     onClick={() => setSelectedDate(date)}
                     style={{
-                        marginBottom: '10px', // Optional: Adds space between buttons
+                        marginBottom: '10px', 
                     }}
                 >
-                    {date.toLocaleDateString('en-US', { weekday: 'long' })} {/* Display only the name of the day */}
+                    {date.toLocaleDateString('en-US', { weekday: 'long' })} 
                 </IonButton>
             ))}
         </div>
